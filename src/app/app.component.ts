@@ -7,4 +7,5 @@ import { fadeAnimation } from 'src/app/animations/animations';
   styleUrls: ['./app.component.scss'],
   animations: [fadeAnimation],
 })
-export class AppComponent {}
+export class AppComponent {
+}

@@ -1,8 +1,3 @@
-<nav>
-  <li><a routerLink="/centro">Centro</a></li>
-  <li><a routerLink="/cv">CV</a></li>
-  <li><a routerLink="/tecnicas">Técnicas</a></li>
-  <li><a routerLink="/tratamientos">Tratamientos</a></li>
-</nav>
-
-<router-outlet></router-outlet>
+<app-header></app-header>
+<router-outlet #o="outlet"></router-outlet>
+<app-footer></app-footer>

@@ -1,0 +1,54 @@
+{
+  "short_name": "terapic",
+  "name": "terapic centre fisioterapia y osteopatía",
+  "icons": [
+    {
+      "src": "/images/logoterapic2022.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/images/iconos/baby.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#5dc1a3",
+  "display": "browser",
+  "scope": "/",
+  "theme_color": "#3367D6",
+  "description": "terapic centre es una consulta de fisioterapia y osteopatía ubicada en Lloseta (CP 07360), Mallorca. Consulta especializada en terapia manual osteopática y punción seca, dirigida a patología muscular, de columna, fisioterapia deportiva y tratamientos durante el embarazo. Tratamientos de osteopatía craneal y visceral y mucho más... Pasamos consulta en Lloseta, al lado de Inca. ¡Visítanos!",
+  "shortcuts": [
+    {
+      "name": "Áreas de tratamiento",
+      "short_name": "Áreas de tratamiento",
+      "description": "En terapic prestamos atención a diferentes áreas de tratamiento, como por ejemplo: Alteraciones músculoesqueléticas, Fisioterapia y osteopatía pediátrica, Fisioterapia y osteopatía en el embarazo",
+      "url": "/tratamientos.html",
+      "icons": [
+        { "src": "images/iconos/musculoesqueletico.png", "sizes": "32x32" }
+      ]
+    },
+    {
+      "name": "Técnicas",
+      "short_name": "Técnicas",
+      "description": "En terapic utilizamos distintas técnicas y abordajes para cada tratamiento, según las características de nuestros pacientes.",
+      "url": "/tecnicas.html",
+      "icons": [
+        { "src": "/images/fotos-tecnicas/diatermia2.jpg", "sizes": "1075x830" }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/fotos-tecnicas/puncion.jpg",
+      "type": "image/jpg",
+      "sizes": "618x412"
+    },
+    {
+      "src": "/images/fotos-tecnicas/terapia manual2.jpg",
+      "type": "image/jpg",
+      "sizes": "2143x1428"
+    }
+  ]
+}

@@ -1,11 +1,10 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  standalone: true,
-  imports: [CommonModule],
-  selector: 'tecnicas',
+  selector: 'app-tecnicas',
   templateUrl: './tecnicas.component.html',
-  styleUrls: ['./tecnicas.component.css'],
+  styleUrls: ['./tecnicas.component.scss']
 })
-export class TecnicasComponent {}
+export class TecnicasComponent {
+
+}

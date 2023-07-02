@@ -1,11 +1,10 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  standalone: true,
-  imports: [CommonModule],
-  selector: 'centro',
+  selector: 'app-centro',
   templateUrl: './centro.component.html',
-  styleUrls: ['./centro.component.css'],
+  styleUrls: ['./centro.component.scss']
 })
-export class CentroComponent {}
+export class CentroComponent {
+
+}

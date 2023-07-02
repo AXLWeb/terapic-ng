@@ -1,11 +1,10 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  standalone: true,
-  imports: [CommonModule],
-  selector: 'cv',
+  selector: 'app-cv',
   templateUrl: './cv.component.html',
-  styleUrls: ['./cv.component.css'],
+  styleUrls: ['./cv.component.scss']
 })
-export class CvComponent {}
+export class CvComponent {
+
+}

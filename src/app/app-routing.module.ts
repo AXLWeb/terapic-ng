@@ -1,36 +1,32 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {
-  CentroComponent,
-  CvComponent,
-  TecnicasComponent,
-  TratamientosComponent,
-} from './pages';
+import { LandingComponent } from './shared/components/landing/landing.component';
 
 const routes: Routes = [
   {
     path: 'centro',
-    title: 'Centro',
-    component: CentroComponent,
+    loadChildren: () =>
+      import('./pages/centro/centro.module').then((m) => m.CentroModule),
   },
   {
     path: 'cv',
-    title: 'Currículum Vitae',
-    component: CvComponent,
+    loadChildren: () => import('./pages/cv/cv.module').then((m) => m.CvModule),
   },
   {
     path: 'tecnicas',
-    title: 'Técnicas',
-    component: TecnicasComponent,
+    loadChildren: () =>
+      import('./pages/tecnicas/tecnicas.module').then((m) => m.TecnicasModule),
   },
   {
     path: 'tratamientos',
-    title: 'Tratamientos',
-    component: TratamientosComponent,
+    loadChildren: () =>
+      import('./pages/tratamientos/tratamientos.module').then(
+        (m) => m.TratamientosModule
+      ),
   },
-
+  { path: '', component: LandingComponent },
   { path: '', redirectTo: '/', pathMatch: 'full' },
-  { path: '**', redirectTo: '/' },
+  { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
 @NgModule({
