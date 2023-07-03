@@ -1,0 +1,32 @@
+#intro {
+  background: #d9d8d133;
+
+  .toolbar {
+    width: 100%;
+    padding: 10px 70px;
+    font-size: 25px;
+  }
+
+  .inner {
+    padding: 5em 5em 3em 5em;
+    max-width: 100%;
+    width: 100%;
+    transform: translateY(0);
+    transition: opacity 1s ease, transform 1s ease;
+    opacity: 1;
+
+    @media screen and (max-width: 1280px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 1680px) {
+      padding: 4em 4em 2em 4em;
+    }
+
+    img.logo {
+      width: 100%;
+      max-width: 500px;
+      min-width: 100px;
+    }
+  }
+}
