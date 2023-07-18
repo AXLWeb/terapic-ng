@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -5,10 +9,54 @@ body {
   -ms-overflow-style: scrollbar;
   font-weight: normal;
   line-height: 1.75;
+
+  &.is-preload *,
+  &.is-preload *:before,
+  &.is-preload *:after {
+    -moz-animation: none !important;
+    -webkit-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+  }
+
+  h1 {
+    font-size: 2.75em;
+  }
+
+  h2 {
+    font-size: 1.75em;
+  }
+
+  h3 {
+    font-size: 1.1em;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  h5 {
+    font-size: 0.8em;
+  }
+
+  h6 {
+    font-size: 0.6em;
+  }
 }
 
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+html,
+body {
+  @media screen and (max-width: 480px) {
+    min-width: 320px;
+  }
 }

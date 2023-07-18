@@ -5,6 +5,19 @@
     width: 100%;
     padding: 10px 70px;
     font-size: 25px;
+
+    .social {
+      a.icon {
+        padding: 10px;
+        &:first-child{
+          padding-left: 0;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+
+      }
+    }
   }
 
   .inner {

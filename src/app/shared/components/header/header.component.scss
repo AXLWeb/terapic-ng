@@ -91,6 +91,17 @@
             text-decoration: none;
             text-transform: uppercase;
 
+            &.active {
+              color: #ffffff;
+              &:after {
+                max-width: 100%;
+              }
+            }
+
+            &:hover {
+              color: rgba(255, 255, 255, 0.55);
+            }
+
             &:before,
             &:after {
               border-radius: 0.2em;

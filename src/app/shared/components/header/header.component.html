@@ -2,11 +2,26 @@
   <div class="inner">
     <nav>
       <ul>
-        <li><a href="#intro">Terapic</a></li>
-        <li><a href="#tratamiento">Áreas de tratamiento</a></li>
-        <li><a href="#tecnicas">Técnicas</a></li>
-        <li><a href="#centro">Centro</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li *ngFor="let item of navigationItems">
+          <a
+            [href]="item.link"
+            routerLinkActive="active"
+            [ngClass]="{ active: activeLink === item.link }"
+            (click)="setActiveLink(item.link)"
+            >{{ item.label }}</a
+          >
+        </li>
+        <!--
+        <li *ngFor="let item of navigationItems">
+          <a
+            href="{{ item.link }}"
+            [ngClass]="{ active: activeLink === item.link }"
+            (click)="setActiveLink(item.link)"
+          >
+            {{ item.label }}
+          </a>
+        </li>
+         -->
       </ul>
     </nav>
   </div>
