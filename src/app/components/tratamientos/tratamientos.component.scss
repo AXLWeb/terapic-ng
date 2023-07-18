@@ -1,0 +1,42 @@
+.wrapper {
+  background-color: var(--greenTerapic);
+  &.fade-up {
+    .inner {
+      transform: translateY(0);
+      transition: opacity 1s ease, transform 1s ease;
+      opacity: 1;
+
+      padding: 5em 5em 3em 5em;
+      width: auto;
+      max-width: 100%;
+
+      @media screen and (max-width: 736px) {
+        padding: 3em 2em 1em 2em;
+      }
+
+      @media screen and (max-width: 1680px) {
+        padding: 4em 4em 2em 4em;
+      }
+
+      @media screen and (max-width: 1280px) {
+        width: 100%;
+      }
+
+      .areas {
+        margin-bottom: 1.5em;
+
+        > section {
+          width: calc(33.333333% - 10px);
+
+          @media (max-width: 767px) {
+            width: 100%;
+          }
+
+          h3 {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}

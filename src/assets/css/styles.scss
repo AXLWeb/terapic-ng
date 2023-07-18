@@ -197,8 +197,13 @@ a {
 
   &:hover {
     border-bottom-color: transparent;
-    color: var(--greenTerapic);
+    //color: var(--greenTerapic);
+    cursor: pointer;
   }
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .icon {
@@ -209,10 +214,108 @@ a {
   > .label {
     display: none;
   }
+
+  &.major {
+    width: 2.5em;
+    height: 2.5em;
+    display: block;
+    background: #ffffff;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 2.5em;
+    margin: 0;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
+
+  img {
+    margin: auto;
+  }
 }
 
-.fade-up > .inner {
-  transform: translateY(0);
-  transition: opacity 1s ease, transform 1s ease;
-  opacity: 1;
+img {
+  overflow-clip-margin: content-box;
+  aspect-ratio: attr(width) / attr(height);
+  overflow: clip;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0 0 2em 0;
+  padding-left: 1em;
+
+  &.actions {
+    display: flex;
+    cursor: default;
+    padding-left: 0;
+
+    li {
+      &:first-child {
+        padding-top: 0;
+      }
+      vertical-align: middle;
+      flex-grow: 1;
+      flex-shrink: 1;
+      padding: 1em 0 0 0;
+      text-align: center;
+      width: 100%;
+
+      .button {
+        width: 100%;
+        border-color: whitesmoke;
+      }
+    }
+  }
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  appearance: none;
+  transition: border-color 0.2s ease;
+  background-color: transparent;
+  border: solid 1px;
+  border-radius: 3em;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.6em;
+  font-weight: bold;
+  height: calc(4.75em + 2px);
+  letter-spacing: 0.25em;
+  line-height: 4.75em;
+  outline: 0;
+  padding: 0 3.75em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.55);
+
+    &:after {
+      opacity: 0.05;
+      transform: scale(1);
+    }
+  }
+
+  &:after {
+    transform: scale(0.25);
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    background: #ffffff;
+    border-radius: 3em;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
 }

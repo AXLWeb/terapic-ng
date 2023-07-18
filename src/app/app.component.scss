@@ -7,3 +7,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+h2 {
+  font-size: 1.75em;
+  @media screen and (max-width: 736px) {
+    font-size: 1.25em;
+  }
+}
+
+h3 {
+  font-size: 1.1em;
+  @media screen and (max-width: 736px) {
+    font-size: 1em;
+  }
+}
